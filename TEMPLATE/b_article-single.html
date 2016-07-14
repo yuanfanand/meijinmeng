@@ -1,0 +1,34 @@
+﻿<div id="content"><div id="content-inner"><div class="topic-post"><div class="topic-content"><dl id="post-<#article/id#>">
+<div id="notice">当前位置： <a href="<#ZC_BLOG_HOST#>" title="<#ZC_BLOG_TITLE#>">首页</a> >> <a href="<#article/category/url#>" title="查看 <#article/category/name#> 的全部文章" rel="category tag"><#article/category/name#></a> >> 正文</div>
+<dt>
+<div class="post-date"><small><#article/posttime/monthnameabbr#></small><span><#article/posttime/day#>日</span></div>
+<div class="post-title">
+<h4>时间：<#article/posttime#></h4>
+<h1><a href="<#article/url#>" rel="bookmark"><#article/title#></a></h1>
+<h6><#ZC_MSG011#>:<#article/author/name#> | <#ZC_MSG012#>:<#article/category/name#> | <#ZC_MSG013#>:<#article/commnums#> | <#ZC_MSG130#>:<#article/addviewcount#> <div id="ckepop">
+<!-- fenxiangdao_start -->
+<div class="bdsharebuttonbox"><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["weixin","qzone","tqq","tsina","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","qzone","tqq","tsina","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<!-- fenxiangdao_end -->
+</div></h6>
+</div></dt>
+<dd class="post-info">
+<!-- baidu_tc block_begin: {"action": "DELETE"} -->
+<div id="ads">
+<#TEMPLATE_INCLUDE_ARTICLE_AD#>
+</div>
+<!-- baidu_tc block_end -->
+<#article/content#>
+<h3 class="post-tag">标签：<#template:article_tag#></h3>
+<div id="post-shenming">除非注明，文章均为<a href="<#ZC_BLOG_HOST#>" title="<#ZC_BLOG_TITLE#>"><#ZC_BLOG_TITLE#></a>原创，转载请注明本文地址：<a href="<#article/url#>"><#article/url#></a></div>
+<div class="post-nav"><#template:article_navbar_l#><#template:article_navbar_r#></div>
+</dd>
+</dl>
+</div>
+</div>
+<div id="comments">
+<div class="comment-title"><h3><ul><li id="tabcomment1" onclick="setTab('tabcomment',1,2)" class="current"><#ZC_MSG013#>:(<#article/commnums#>)</li></ul><span id="gotocomment"><a href="#comment">【评论很精彩！】</a></span></h3> </div>
+<div id="contabcomment1"><div id="comment-list"><ul class="parents"><#template:article_comment#></ul></div></div>
+<div id="contabcomment2" class="nodis"><div class="error-tip"><#TEMPLATE_INCLUDE_SHENMING#></div></div></div>
+<#template:article_commentpost#>
+</div></div>

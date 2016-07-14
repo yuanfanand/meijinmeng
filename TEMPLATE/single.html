@@ -1,0 +1,36 @@
+﻿<#TEMPLATE_HEADER#>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="topbar">
+<div id="logo">
+<h2><a href="<#ZC_BLOG_HOST#>" title="<#ZC_BLOG_TITLE#>"><#ZC_BLOG_TITLE#></a></h2>
+<p><#ZC_BLOG_SUBTITLE#></p>
+</div>
+<div id="toptool"><#TEMPLATE_INCLUDE_TOP_AD#></div>
+</div>
+<div id="menu">
+<ul><#CACHE_INCLUDE_NAVBAR#></ul>
+</div>
+<nav id="navs-wrap">
+<div id="logos"><h1><a href="<#ZC_BLOG_HOST#>" title="<#ZC_BLOG_TITLE#>"><#ZC_BLOG_TITLE#></a></h1></div>
+<div class="menu-icon">导航</div>
+<ul id="navs" class="menu"><#TEMPLATE_INCLUDE_MNAVBAR#></ul>
+</nav>
+</div>
+<div id="container">
+<#template:article-single#>
+<div id="sidebar">
+<div id="sidebar-inner">
+<#template:sidebar3#>
+<#template:sidebar4#>
+</div>
+</div>
+</div> 
+<#TEMPLATE_FOOTER#>
+</div>
+<script src="<#ZC_BLOG_HOST#>zb_users/theme/LuSongSong/script/util.js" type="text/javascript"></script>
+<script src="<#ZC_BLOG_HOST#>zb_users/theme/LuSongSong/script/custom.js" type="text/javascript"></script>
+</body>
+</html>
+<!-- <#BLOG_CREATE_TIME#> -->

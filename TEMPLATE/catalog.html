@@ -1,0 +1,44 @@
+﻿<#TEMPLATE_HEADER#>
+<body>
+<link rel="shortcut icon" href="<#ZC_BLOG_HOST#>favicon.ico" /></link>
+<div id="wrapper">
+<div id="header">
+<div id="topbar">
+<div id="logo">
+<h1><a href="<#ZC_BLOG_HOST#>" title="<#ZC_BLOG_TITLE#>"><#ZC_BLOG_TITLE#></a></h1>
+<p><#ZC_BLOG_SUBTITLE#></p>
+</div>
+<div id="toptool"><#TEMPLATE_INCLUDE_TOP_AD#></div>
+</div>
+<div id="menu">
+<ul><#CACHE_INCLUDE_NAVBAR#></ul>
+</div>
+<nav id="navs-wrap">
+<div id="logos"><h1><a href="<#ZC_BLOG_HOST#>" title="<#ZC_BLOG_TITLE#>"><#ZC_BLOG_TITLE#></a></h1></div>
+<div class="menu-icon">导航</div>
+<ul id="navs" class="menu"><#TEMPLATE_INCLUDE_MNAVBAR#></ul>
+</nav>
+</div>
+<div id="container">
+<div id="content">
+<div id="content-inner">
+<div class="archive-list">
+<div class="post-list">
+<#template:article-multi#>
+</div>
+</div>
+<div class="pagenavi"><span><#articlelist/page/now#> of <#articlelist/page/all#></span><#ZC_MSG042#>:<#template:pagebar#></div>
+</div>
+</div>
+<div id="sidebar">
+<div id="sidebar-inner">
+<#template:sidebar2#>
+</div>
+</div>
+</div> 
+<#TEMPLATE_FOOTER#>
+</div>
+<script src="<#ZC_BLOG_HOST#>zb_users/theme/LuSongSong/script/util.js" type="text/javascript"></script>
+<script src="<#ZC_BLOG_HOST#>zb_users/theme/LuSongSong/script/custom.js" type="text/javascript"></script>
+</body>
+</html>

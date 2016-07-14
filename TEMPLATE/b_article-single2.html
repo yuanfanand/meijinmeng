@@ -1,0 +1,21 @@
+﻿<div id="content"><div id="content-inner"><div class="topic-post"><div class="topic-content"><dl id="post-<#article/id#>">
+<dt>
+<div class="post-title">
+<h1><a href="<#article/url#>" rel="bookmark"><#article/title#></a></h1>
+</div></dt>
+<dd class="post-info">
+<!-- baidu_tc block_begin: {"action": "DELETE"} -->
+
+<!-- baidu_tc block_end -->
+<#article/content#>
+<div class="post-nav"><#template:article_navbar_l#><#template:article_navbar_r#></div>
+</dd>
+</dl>
+</div>
+</div>
+<div id="comments">
+<div class="comment-title"><h3><ul><li id="tabcomment1" onclick="setTab('tabcomment',1,2)" class="current"><#ZC_MSG013#>:(<#article/commnums#>)</li><li id="tabcomment2" onclick="setTab('tabcomment',2,2)">隐藏评论</li></ul><span id="gotocomment"><a href="#comment">【评论很精彩，有内幕、有真相！】</a></span></h3> </div>
+<div id="contabcomment1"><div id="comment-list"><ul class="parents"><#template:article_comment#></ul></div></div>
+<div id="contabcomment2" class="nodis"><div class="error-tip"><#TEMPLATE_INCLUDE_SHENMING#></div></div></div>
+<#template:article_commentpost#>
+</div></div>

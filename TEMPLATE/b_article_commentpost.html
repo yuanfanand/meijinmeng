@@ -1,0 +1,47 @@
+﻿<center><a name="comment"></a>
+<#TEMPLATE_INCLUDE_COMMENT_AD#>
+</center>
+<div class="post" id="divCommentPost">
+<div id="post-comment-title"><span id="comment-reply">已盖 <font color="#FF0000"><#article/commnums#></font> 层楼,你还等什么？</span></div>
+    <div id="post-comment-body">
+        <form id="frmSumbit" target="_self" method="post" action="<#article/commentposturl#>" >
+        <input type="hidden" name="inpId" id="inpId" value="<#article/id#>" />
+        <input type="hidden" name="inpArticle" id="inpArticle" value="" />
+        <input type="hidden" name="inpLocation" id="inpLocation" value="" />
+        <div id="author_info">
+        	<div class="user-info">
+            	<ul>
+                <p><a rel="nofollow" id="cancel-reply" href="#divCommentPost" style="display:none;"><#ZC_MSG264#><#ZC_MSG149#></a></p>
+                    <p><input type="text" name="inpName" id="inpName" class="input_out" value="" size="28" tabindex="1" onfocus="this.className='input_on';this.onmouseout=''" onblur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};" onmousemove="this.className='input_move'" onmouseout="this.className='input_out'" /> <label for="inpName">昵称(必填)</label></p>
+                    <p><input type="text" name="inpEmail" id="inpEmail" class="input_out" value="" size="28" tabindex="2" onfocus="this.className='input_on';this.onmouseout=''" onblur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};" onmousemove="this.className='input_move'" onmouseout="this.className='input_out'"/> <label for="inpEmail">邮箱</label></p>
+                    <p><input type="text" name="inpHomePage" id="inpHomePage" class="input_out" value="" size="28" tabindex="3" onfocus="this.className='input_on';this.onmouseout=''" onblur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};" onmousemove="this.className='input_move'" onmouseout="this.className='input_out'"/> <label for="inpHomePage">网址(请加http://)</label></p>
+                    <p><input type="checkbox" checked="checked" name="chkRemember" value="1" id="chkRemember" /> <label for="chkRemember"><#ZC_MSG049#></label></p>
+                    <#template:article_commentpost-verify#>
+                </ul>
+        	</div>
+        </div>
+        <div id="post-comment-text">
+        	<textarea name="txaArticle" id="txaArticle" onchange="GetActiveText(this.id);" onclick="GetActiveText(this.id);" onfocus="GetActiveText(this.id);" cols="50" rows="8" tabindex="5"  ></textarea>
+        </div>
+        <div id="submit-box">
+        	<span>
+        	<input name="btnSumbit" type="submit" tabindex="6" value="提交评论" onclick="JavaScript:return VerifyMessage()" class="post-comment-button" /> 
+            </span>
+            <#ZC_MSG040#>
+        </div>
+<script language="JavaScript" type="text/javascript">
+  var commenttextarea = document.getElementById('txaArticle');
+  commenttextarea.onkeydown = function quickSubmit(e) {
+  if (!e) var e = window.event;
+  if (e.ctrlKey && e.keyCode == 13){
+    return VerifyMessage();
+  }
+  }
+</script>
+<script language="JavaScript" type="text/javascript">objActive="txaArticle";ExportUbbFrame();</script>
+        </form>
+        <p class="postbottom"></p>
+        <script language="JavaScript" type="text/javascript">LoadRememberInfo();</script>
+    </div>
+</div>
+<div class="related-post"><h3>【<#ZC_MSG231#>】</h3><ul><#template:article_mutuality#></ul></div>
