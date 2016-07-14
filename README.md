@@ -41,7 +41,7 @@ The improved
 ## 演示
 Demo
 
-+ [主题演示站点](http://meijinmeng.cn/) 想预览主题上站效果，打开看看先。http://meijinmeng.cn
++ [演示站点](http://meijinmeng.cn/) 想预览主题上站效果，打开看看先。http://meijinmeng.cn
 + 欢迎修正 /Welcomes the amendment
 + 欢迎吐槽补充，[吐槽补充地址](https://github.com/yuanfanand/meijinmeng/issues/1)
 
